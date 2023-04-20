@@ -17,7 +17,7 @@ const DisplayGallery = (props) => {
         renderItem={({ item }) => (
           <TouchableOpacity
             style={styles.imageContainer}
-            onPress={() => props.navigation.navigate("DisplayPhoto", {photo: item})}
+            onPress={() => props.navigation.navigate("DisplayPhoto", {photos: props.route.params.photos})}
           >
             <Image source={{ uri: item }} style={styles.image} />
           </TouchableOpacity>

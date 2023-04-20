@@ -13,7 +13,7 @@ const DisplayGallery = (props) => {
       <FlatList
         data={props.route.params.photos}
         keyExtractor={(item, index) => index.toString()}
-        numColumns={3} // Set the number of columns you want to display
+        numColumns={3} 
         renderItem={({ item }) => (
           <TouchableOpacity
             style={styles.imageContainer}
@@ -35,12 +35,12 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     margin: 5,
-    height: 100, // Set the height of each image container
+    height: 100,
     width: 100,
   },
   image: {
     flex: 1,
-    resizeMode: "cover", // Resize the image to cover the image container
+    resizeMode: "cover",
   },
 });
 

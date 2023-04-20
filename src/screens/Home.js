@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyleSheet, TouchableOpacity, Text, View } from "react-native";
 
 const Home = (props) => {
@@ -27,9 +27,13 @@ export default Home;
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "blue",
-    borderRadius: 5,
-    padding: 10,
+    width: 150,
+    height: 50,
+    backgroundColor: 'blue',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10,
+    margin: 10
   },
   buttonText: {
     color: "white",

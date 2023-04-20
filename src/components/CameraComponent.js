@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, Button, Image } from "react-native";
 import { Camera } from "expo-camera";
 
 const CameraComponent = (props) => {
-	// console.log(props)
   const [hasCameraPermission, setHasCameraPermission] = useState(null);
   const [camera, setCamera] = useState(null);
   const [image, setImage] = useState(null);
@@ -35,8 +34,9 @@ const CameraComponent = (props) => {
           ratio={"1:1"}
         />
       </View>
+      <View style={{alignSelf:'center'}}>{image && <Text>{image}</Text>}</View>
       <Button
-        title="Flip Image"
+        title="Flip Camera"
         onPress={() => {
           setType(
             type === Camera.Constants.Type.back
@@ -46,7 +46,7 @@ const CameraComponent = (props) => {
         }}
       ></Button>
       <Button title="Take Picture" onPress={() => takePicture()} />
-      {image && <Image source={{ uri: image }} style={{ flex: 1 }} />}
+      {/* {image && <Image source={{ uri: image }} style={{ flex: 1 }} />} */}
     </View>
   );
 };

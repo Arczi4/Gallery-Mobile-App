@@ -5,6 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import CameraComponent from "./src/components/CameraComponent";
 import DisplayGallery from "./src/components/DisplayGallery";
+import DisplayPhoto from "./src/components/DisplayPhoto";
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,11 @@ export default function App() {
           name="DisplayGallery"
           component={DisplayGallery}
           initialParams={{ photos: photos, setPhotos: setPhotos }}
+        />
+        <Stack.Screen
+          name="DisplayPhoto"
+          component={DisplayPhoto}
+          initialParams={{ photo: "" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

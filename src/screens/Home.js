@@ -16,7 +16,7 @@ const Home = (props) => {
         onPress={() => props.navigation.navigate("DisplayGallery")}
       >
         <View style={styles.button}>
-          <Text style={styles.buttonText}>Display Photos</Text>
+          <Text style={styles.buttonText}>Gallery</Text>
         </View>
       </TouchableOpacity>
     </View>

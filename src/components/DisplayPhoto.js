@@ -1,6 +1,7 @@
 import React from "react";
 import { Image, StyleSheet, View } from "react-native";
 import Swiper from "react-native-swiper";
+import ImageZoom from 'react-native-image-pan-zoom';
 
 const DisplayPhoto = (props) => {
   return (
@@ -8,7 +9,17 @@ const DisplayPhoto = (props) => {
       {props.route.params.photos.map((photo, index) => {
         return (
           <View style={styles.slide} key={index}>
-            <Image source={{ uri: photo }} style={styles.image} />
+            <ImageZoom
+              cropWidth={390}
+              cropHeight={700}
+              imageWidth={390}
+              imageHeight={700}
+							minScale={1}
+							maxScale={5}
+              enableCenterFocus={true}
+            >
+              <Image source={{ uri: photo }} style={styles.image} />
+            </ImageZoom>
           </View>
         );
       })}

@@ -5,7 +5,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 const CameraComponent = (props) => {
   const [hasCameraPermission, setHasCameraPermission] = useState(null);
-  const [camera, setCamera] = useState(null);
+  const [camera, setCamera] = useState(null); 
   const [image, setImage] = useState(null);
   const [type, setType] = useState(Camera.Constants.Type.back);
 

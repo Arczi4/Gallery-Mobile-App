@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-ml-kit/text-recognition": "^1.2.1",
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
     "expo": "~48.0.11",
@@ -16,15 +17,18 @@
     "expo-media-library": "^15.2.3",
     "expo-sharing": "^11.2.2",
     "expo-status-bar": "~1.4.4",
+    "ignore-warnings": "^0.2.1",
     "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-native": "0.71.6",
     "react-native-camera": "^4.2.1",
     "react-native-image-pan-zoom": "^2.1.12",
     "react-native-image-picker": "^5.3.1",
     "react-native-image-zoom-viewer": "^3.0.1",
     "react-native-swiper": "^1.6.0",
+    "react-native-text-recognition": "^1.0.0",
     "react-native-web": "~0.18.10",
-    "react-dom": "18.2.0"
+    "tesseract.js": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
